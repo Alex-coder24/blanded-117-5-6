@@ -21,7 +21,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-center">
         <nav class="header-nav">
           <a class="header-logo" href="">
             <img src="./images/logo.png" alt="logo" width="40" height="36" />
@@ -29,7 +29,7 @@
           </a>
           <ul class="header-list">
             <li class="header-item">
-              <a class="header-link" href="./index.html">Product</a>
+              <a class="header-link weight" href="./index.html">Product</a>
             </li>
             <li class="header-item">
               <a class="header-link" href="./pricing.html">Pricing</a>
@@ -38,7 +38,7 @@
               <a class="header-link" href="./customers.html">Customers</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="">Resources</a>
+              <a class="header-link" href="./resources.html">Resources</a>
             </li>
           </ul>
         </nav>
@@ -50,8 +50,14 @@
             <button class="header-btn second" type="button">Sign Up</button>
           </li>
         </ul>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="28" height="31">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container foto">
@@ -61,7 +67,7 @@
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
-            <ul class="hero-list">
+            <ul class="hero-list-btn">
               <li class="hero-item">
                 <button class="hero-btn-get" type="button">Get started</button>
               </li>
@@ -80,6 +86,7 @@
             alt="main-img"
             width="600"
             height="555"
+            class="hero-img"
           />
         </div>
       </section>
@@ -171,6 +178,7 @@
             </ul>
           </div>
           <img
+            class="management-img"
             src="./images/management-img.png"
             alt="Management"
             width="540"
@@ -182,6 +190,7 @@
       <section class="support">
         <div class="container supp">
           <img
+            class="support-img"
             src="./images/support-img.png"
             alt="Customer support"
             width="540"
@@ -202,10 +211,11 @@
             <ul class="support-list">
               <li class="support-item">
                 <div class="support-item-cont">
-                  <span class="sup-svg yellow"
-                    ><svg class="sup-icons" width="17" height="12">
-                      <use href="./images/icons.svg#icon-tick"></use></svg
-                  ></span>
+                  <div class="sup-svg yellow">
+                    <svg class="sup-icons" width="17" height="12">
+                      <use href="./images/icons.svg#icon-tick"></use>
+                    </svg>
+                  </div>
                   <p class="support-item-text">
                     Never worry about overpaying for your energy again.
                   </p>
@@ -213,10 +223,11 @@
               </li>
               <li class="support-item">
                 <div class="support-item-cont">
-                  <span class="sup-svg red"
-                    ><svg class="sup-icons" width="17" height="12">
-                      <use href="./images/icons.svg#icon-tick"></use></svg
-                  ></span>
+                  <div class="sup-svg red">
+                    <svg class="sup-icons" width="17" height="12">
+                      <use href="./images/icons.svg#icon-tick"></use>
+                    </svg>
+                  </div>
                   <p class="support-item-text">
                     We will only switch you to energy companies that we trust
                     and will treat you right
@@ -225,10 +236,11 @@
               </li>
               <li class="support-item">
                 <div class="support-item-cont">
-                  <span class="sup-svg blue"
-                    ><svg class="sup-icons" width="17" height="12">
-                      <use href="./images/icons.svg#icon-tick"></use></svg
-                  ></span>
+                  <div class="sup-svg blue">
+                    <svg class="sup-icons" width="17" height="12">
+                      <use href="./images/icons.svg#icon-tick"></use>
+                    </svg>
+                  </div>
                   <p class="support-item-text">
                     We track the markets daily and know where the savings are.
                   </p>
@@ -269,6 +281,7 @@
             </ul>
           </div>
           <img
+            class="collaborative-img"
             src="./images/collaboration-img.png"
             alt="Collaborative"
             width="540"
@@ -278,14 +291,14 @@
       </section>
 
       <section class="process">
-        <div class="container">
+        <div class="container proce">
           <h2 class="process-subtitle">Quick & Easy Process</h2>
           <p class="process-text">
             Do you require some help for your project: Conception workshop,
             prototyping, marketing strategy, landing page, Ux/UI?
           </p>
           <ul class="process-list">
-            <li class="process-item end-item">
+            <li class="process-item">
               <div class="pro-flex">
                 <img
                   src="./images/avatar.png"
@@ -293,35 +306,22 @@
                   width="98"
                   height="98"
                 />
-                <div class="bubble">
+                <div class="bubble bubble-pa">
                   <p class="process-item-text">I can take care of your pitch</p>
                 </div>
               </div>
             </li>
-            <li class="process-item reverse start-item">
+            <li class="process-item">
               <div class="pro-flex">
-                <img
-                  src="./images/avatar-3.png"
-                  alt="photo-fourth-developer"
-                  width="98"
-                  height="98"
-                />
-                <div class="bubble">
-                  <p class="process-item-text">I can help marketing strategy</p>
+                <div class="bubble bubble-pad">
+                  <p class="process-item-text">I can design you website</p>
                 </div>
-              </div>
-            </li>
-            <li class="process-item reverse">
-              <div class="pro-flex">
                 <img
                   src="./images/avatar-1.png"
                   alt="photo-second-developer"
                   width="98"
                   height="98"
                 />
-                <div class="bubble">
-                  <p class="process-item-text">I can prototype your app</p>
-                </div>
               </div>
             </li>
             <li class="process-item">
@@ -333,8 +333,21 @@
                   height="98"
                 />
                 <div class="bubble">
-                  <p class="process-item-text">I can take care of your pitch</p>
+                  <p class="process-item-text">I can help marketing strategy</p>
                 </div>
+              </div>
+            </li>
+            <li class="process-item">
+              <div class="pro-flex">
+                <div class="bubble bubble-pad">
+                  <p class="process-item-text">I can prototype your app</p>
+                </div>
+                <img
+                  src="./images/avatar-3.png"
+                  alt="photo-fourth-developer"
+                  width="98"
+                  height="98"
+                />
               </div>
             </li>
           </ul>
@@ -407,7 +420,8 @@
           </ul>
         </div>
       </section>
-      <section class="price">
+
+      <section class="price price-center">
         <div class="container">
           <h2 class="price-subtitle">Price Table</h2>
           <p class="price-text">We offer competitive price</p>
@@ -417,8 +431,10 @@
               <p class="price-item-text">Brief price description</p>
               <div class="price-cont">
                 <h4 class="price-item-subtitle-two">0</h4>
-                <p class="price-item-text-two">$</p>
-                <p class="price-item-text-three">Per / month</p>
+                <div class="price-text-cont">
+                  <p class="price-item-text-two">$</p>
+                  <p class="price-item-text-three">Per / month</p>
+                </div>
               </div>
               <ul class="price-list-two">
                 <li class="price-item-two">
@@ -438,8 +454,10 @@
               <p class="price-item-text">Brief price description</p>
               <div class="price-cont">
                 <h4 class="price-item-subtitle-two green">5</h4>
-                <p class="price-item-text-two green">$</p>
-                <p class="price-item-text-three">Per / month</p>
+                <div class="price-text-cont">
+                  <p class="price-item-text-two green">$</p>
+                  <p class="price-item-text-three">Per / month</p>
+                </div>
               </div>
               <ul class="price-list-two">
                 <li class="price-item-two">
@@ -459,8 +477,10 @@
               <p class="price-item-text">Brief price description</p>
               <div class="price-cont">
                 <h4 class="price-item-subtitle-two">10</h4>
-                <p class="price-item-text-two">$</p>
-                <p class="price-item-text-three">Per / month</p>
+                <div class="price-text-cont">
+                  <p class="price-item-text-two">$</p>
+                  <p class="price-item-text-three">Per / month</p>
+                </div>
               </div>
               <ul class="price-list-two">
                 <li class="price-item-two">
@@ -478,6 +498,7 @@
           </ul>
         </div>
       </section>
+
       <section class="feedback">
         <div class="container">
           <h2 class="feedback-subtitle">What Clients Say</h2>
@@ -535,20 +556,23 @@
           </ul>
         </div>
       </section>
+
       <section class="promo">
-        <div class="container pro">
-          <div class="pro-text">
-            <h2 class="promo-subtitle">
-              Join 100 Compannies who boost their business with Product
-            </h2>
-            <button class="promobtn" type="button">Get This</button>
+        <div class="container">
+          <div class="pro">
+            <div class="pro-text">
+              <h2 class="promo-subtitle">
+                Join 100 Compannies who boost their business with Product
+              </h2>
+              <button class="promo-btn" type="button">Get This</button>
+            </div>
+            <img
+              src="./images/screen.png"
+              alt="screen"
+              width="351"
+              height="331"
+            />
           </div>
-          <img
-            src="./images/screen.png"
-            alt="screen"
-            width="351"
-            height="331"
-          />
         </div>
       </section>
 
@@ -586,21 +610,31 @@
           <div>
             <h2 class="footer-item-subtitle">Resource</h2>
             <ul class="footer-list">
-              <li class="footer-item">About Us</li>
-              <li class="footer-item">Blog</li>
-              <li class="footer-item">Contact</li>
-              <li class="footer-item">FAQ</li>
+              <li class="footer-item">
+                <p class="footer-item-text">About Us</p>
+              </li>
+              <li class="footer-item"><p class="footer-item-text">Blog</p></li>
+              <li class="footer-item">
+                <p class="footer-item-text">Contact</p>
+              </li>
+              <li class="footer-item"><p class="footer-item-text">FAQ</p></li>
             </ul>
           </div>
           <div>
             <h2 class="footer-item-subtitle">Legal Stuff</h2>
             <ul class="footer-list">
-              <li class="footer-item">Disclaimer</li>
-              <li class="footer-item">Financing</li>
-              <li class="footer-item">Privacy Policy</li>
+              <li class="footer-item">
+                <p class="footer-item-text">Disclaimer</p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-item-text">Financing</p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-item-text">Privacy Policy</p>
+              </li>
             </ul>
           </div>
-          <div>
+          <div class="footer-form-cont">
             <p class="footer-form-text">
               knowing you're always on the best energy deal.
             </p>

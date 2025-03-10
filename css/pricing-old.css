@@ -1,0 +1,186 @@
+details {
+  list-style: none;
+}
+summary {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* #region price */
+.price {
+  margin-top: 50px;
+}
+.price-text-up {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.price-subtitle-pric {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto 16px auto;
+  max-width: 350px;
+}
+.price-text-pric {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1150px) {
+  .price-text-up {
+    margin-bottom: 32px;
+  }
+  .price-subtitle-pric {
+    margin-bottom: 18px;
+    font-size: 40px;
+    max-width: none;
+  }
+}
+/* #endregion price */
+
+/* #region enterprise */
+.enterprise {
+  padding-top: 53px;
+  padding-bottom: 51px;
+  margin-bottom: 294px;
+  background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+}
+.enterprise-title-span {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.enterprise-title {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.enterprise-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 8px;
+  width: 224px;
+  height: 44px;
+  background-color: #02897a;
+  display: block;
+  margin: 0 auto;
+}
+/* #endregion enterprise */
+
+/* #region busnises */
+.busnises {
+}
+
+.busnises-cont {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.busnises-title {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+.busnises-img {
+}
+.busnises-list {
+}
+.cont-icon-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f5f7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.busnises-item-cont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+.busnises-item {
+  margin-bottom: 32px;
+}
+.busnises-item-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+.busnises-text {
+  font-weight: 400;
+  font-size: 16px;
+  /* line-height: 28px; */
+  line-height: 1.75;
+  width: 530px;
+}
+/* #endregion busnises */
+
+/* #region question */
+.question-cont {
+  max-width: 920px;
+}
+.question {
+  margin-bottom: 150px;
+}
+.question-title {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.question-text {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.question-list {
+}
+.question-item {
+  margin-bottom: 38px;
+}
+.question-item-details {
+}
+.question-item-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-plus,
+.icon-minus {
+  fill: #02897a;
+}
+.icon-minus {
+  display: none;
+}
+.question-item-details[open] .icon-plus {
+  display: none;
+}
+.question-item-details[open] .icon-minus {
+  display: block;
+}
+.question-item-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.question-item-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+/* #endregion question*/

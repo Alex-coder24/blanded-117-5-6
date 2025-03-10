@@ -11,11 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Inter:opsz,wght@14..32,500&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/customers.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-center">
         <nav class="header-nav">
           <a class="header-logo" href="">
             <img src="./images/logo.png" alt="logo" width="40" height="36" />
@@ -29,10 +30,12 @@
               <a class="header-link" href="./pricing.html">Pricing</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="./customers.html">Customers</a>
+              <a class="header-link weight" href="./customers.html"
+                >Customers</a
+              >
             </li>
             <li class="header-item">
-              <a class="header-link" href="">Resources</a>
+              <a class="header-link" href="./resources.html">Resources</a>
             </li>
           </ul>
         </nav>
@@ -44,9 +47,13 @@
             <button class="header-btn second" type="button">Sign Up</button>
           </li>
         </ul>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="28" height="31">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
     <main>
       <section class="clients">
         <div class="container">
@@ -59,9 +66,19 @@
               <a href=""><img src="./images/google-logo.png" alt="google" /></a>
             </li>
             <li class="clients-item">
-              <a href=""
-                ><img src="./images/microsoft-logo.png" alt="microsoft"
-              /></a>
+              <a href="">
+                <picture>
+                  <source
+                    srcset="./images/microsoft-logo.png"
+                    media="(min-width: 1150px)"
+                  />
+                  <img
+                    srcset=""
+                    src="./images/microsoft-mob.png"
+                    alt="microsoft"
+                  />
+                </picture>
+              </a>
             </li>
             <li class="clients-item">
               <a href=""><img src="./images/fedex-logo.png" alt="fedex" /></a>
@@ -138,7 +155,7 @@
         </div>
       </section>
 
-      <section>
+      <section class=" ">
         <div class="container">
           <div class="cont-step">
             <div class="cont-step-text">
@@ -177,39 +194,57 @@
           <h2 class="join-title">
             Join thousand of other who have already received offers
           </h2>
-          <div class="join-item-cont">
-            <ul>
-              <li><h3>Business</h3></li>
-              <li>Cash Flow</li>
-              <li>Asset Backed</li>
-              <li>Receivables Finance</li>
-              <li>Find the best business product</li>
-            </ul>
-            <ul>
-              <li><h3>Enterprise</h3></li>
-              <li>Site Acquisition</li>
-              <li>Bridge</li>
-              <li>Development Financing</li>
-              <li>Find the best business product</li>
-            </ul>
+          <div class="join-list-cont">
+            <div class="join-list-cont-two">
+              <img class="join-item-img" src="./images/Image-1.png" alt="" />
+              <h3 class="join-item-title">Business</h3>
+              <ul class="join-list">
+                <li class="join-item">
+                  <p class="join-item-text">Cash Flow</p>
+                </li>
+                <li class="join-item">
+                  <p class="join-item-text">Asset Backed</p>
+                </li>
+                <li class="join-item">
+                  <p class="join-item-text">Receivables Finance</p>
+                </li>
+              </ul>
+              <p class="join-item-text-bold">Find the best business product</p>
+            </div>
+            <div class="join-list-cont-two">
+              <img class="join-item-img" src="./images/Image-2.png" alt="" />
+              <h3 class="join-item-title">Enterprise</h3>
+              <ul class="join-list">
+                <li class="join-item">
+                  <p class="join-item-text">Site Acquisition</p>
+                </li>
+                <li class="join-item"><p class="join-item-text">Bridge</p></li>
+                <li class="join-item">
+                  <p class="join-item-text">Development Financing</p>
+                </li>
+              </ul>
+              <p class="join-item-text-bold">Find the best business product</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="promo">
-        <div class="container pro">
-          <div class="pro-text">
-            <h2 class="promo-subtitle">
-              Join 100 Compannies who boost their business with Product
-            </h2>
-            <button class="promobtn" type="button">Get This</button>
+        <div class="container">
+          <div class="pro">
+            <div class="pro-text">
+              <h2 class="promo-subtitle">
+                Join 100 Compannies who boost their business with Product
+              </h2>
+              <button class="promo-btn" type="button">Get This</button>
+            </div>
+            <img
+              src="./images/screen.png"
+              alt="screen"
+              width="351"
+              height="331"
+            />
           </div>
-          <img
-            src="./images/screen.png"
-            alt="screen"
-            width="351"
-            height="331"
-          />
         </div>
       </section>
     </main>
@@ -248,21 +283,31 @@
         <div>
           <h2 class="footer-item-subtitle">Resource</h2>
           <ul class="footer-list">
-            <li class="footer-item">About Us</li>
-            <li class="footer-item">Blog</li>
-            <li class="footer-item">Contact</li>
-            <li class="footer-item">FAQ</li>
+            <li class="footer-item">
+              <p class="footer-item-text">About Us</p>
+            </li>
+            <li class="footer-item"><p class="footer-item-text">Blog</p></li>
+            <li class="footer-item">
+              <p class="footer-item-text">Contact</p>
+            </li>
+            <li class="footer-item"><p class="footer-item-text">FAQ</p></li>
           </ul>
         </div>
         <div>
           <h2 class="footer-item-subtitle">Legal Stuff</h2>
           <ul class="footer-list">
-            <li class="footer-item">Disclaimer</li>
-            <li class="footer-item">Financing</li>
-            <li class="footer-item">Privacy Policy</li>
+            <li class="footer-item">
+              <p class="footer-item-text">Disclaimer</p>
+            </li>
+            <li class="footer-item">
+              <p class="footer-item-text">Financing</p>
+            </li>
+            <li class="footer-item">
+              <p class="footer-item-text">Privacy Policy</p>
+            </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-form-cont">
           <p class="footer-form-text">
             knowing you're always on the best energy deal.
           </p>

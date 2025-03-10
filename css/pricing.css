@@ -1,0 +1,234 @@
+.hidden {
+  display: none;
+}
+details {
+  list-style: none;
+}
+summary {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* #region price */
+.price {
+  margin-top: 50px;
+}
+.price-text-up {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.price-subtitle-pric {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto 16px auto;
+  max-width: 350px;
+}
+.price-text-pric {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1150px) {
+  .price-text-up {
+    margin-bottom: 32px;
+  }
+  .price-subtitle-pric {
+    margin-bottom: 18px;
+    font-size: 40px;
+    max-width: none;
+  }
+}
+/* #endregion price */
+
+/* #region enterprise */
+.enterprise {
+  padding-top: 47px;
+  padding-bottom: 46px;
+  margin-bottom: 100px;
+  background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+}
+.enterprise-title-span {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.enterprise-title {
+  font-weight: 700;
+  font-size: 32px;
+  max-width: 335px;
+  text-align: center;
+  margin: 0 auto 25px auto;
+}
+.enterprise-text {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 32px auto;
+}
+.enterprise-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 8px;
+  width: 224px;
+  height: 44px;
+  background-color: #02897a;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1150px) {
+  .enterprise-title {
+    font-size: 34px;
+    max-width: none;
+  }
+  .enterprise-text {
+    max-width: none;
+  }
+  .enterprise-title-span {
+    margin-bottom: 16px;
+  }
+  .enterprise-title {
+    margin-bottom: 8px;
+  }
+}
+/* #endregion enterprise */
+
+/* #region busnises */
+.busnises {
+  margin-bottom: 100px;
+}
+.busnises-title {
+  font-weight: 700;
+  font-size: 32px;
+  max-width: 342px;
+  margin: 0 auto 33px auto;
+  text-align: center;
+}
+.busnises-img {
+  margin-bottom: 32px;
+}
+.cont-icon-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f5f7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.busnises-list .busnises-item:last-child {
+  margin-bottom: 0;
+}
+.busnises-item-cont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+.busnises-item {
+  margin-bottom: 24px;
+}
+.busnises-text {
+  font-weight: 400;
+  font-size: 16px;
+  /* line-height: 28px; */
+  line-height: 1.75;
+  width: 334px;
+}
+@media screen and (min-width: 1150px) {
+  .busnises-cont {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  .busnises-title {
+    max-width: none;
+    font-size: 34px;
+    margin-bottom: 56px;
+  }
+
+  .busnises-item {
+    margin-bottom: 32px;
+  }
+  .busnises-text {
+    width: 530px;
+  }
+  .busnises-img {
+    margin-bottom: 0;
+  }
+}
+/* #endregion busnises */
+
+/* #region question */
+.question {
+  margin-bottom: 100px;
+}
+.question-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.question-text {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  max-width: 326px;
+  margin: 0 auto 30px auto;
+}
+.question-list {
+}
+.question-item {
+  margin-bottom: 46px;
+}
+.question-item-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.icon-plus,
+.icon-minus {
+  fill: #02897a;
+  flex-shrink: 0;
+}
+.icon-minus {
+  display: none;
+}
+.question-item-details[open] .icon-plus {
+  display: none;
+}
+.question-item-details[open] .icon-minus {
+  display: block;
+}
+.question-item-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.question-item-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+@media screen and (min-width: 1150px) {
+  .question-cont {
+    max-width: 920px;
+  }
+  .question-text {
+    margin-bottom: 50px;
+    max-width: none;
+  }
+  .question-item {
+    margin-bottom: 38px;
+  }
+}
+/* #endregion question */
