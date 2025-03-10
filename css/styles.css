@@ -665,7 +665,7 @@ fieldset {
 .pro-flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 14px;
 }
 .bubble {
   fill: #fff;
@@ -676,7 +676,6 @@ fieldset {
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 30px;
-
   box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
 }
 .process-item-text {
@@ -699,6 +698,10 @@ fieldset {
   .proce {
     width: 916px;
     margin: 0 auto;
+  }
+  .pro-flex {
+    justify-content: space-between;
+    gap: 0;
   }
   .process-subtitle {
     margin-bottom: 25px;
