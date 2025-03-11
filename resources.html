@@ -79,23 +79,34 @@
             /><button class="bisnises-form-btn" type="submit">Join Now</button>
           </form>
           <div class="bisnises-people-cont">
-            <img
-              class="bisnises-people-img"
-              src="./images/Group 1451.png"
-              alt=""
-            />
+            <div class="bisnises-cont-img">
+              <img
+                class="bisnises-img rahid"
+                src="./images/rahid-2.png"
+                alt=""
+              />
+              <img
+                class="bisnises-img fahid"
+                src="./images/rahid-1.png"
+                alt=""
+              />
+              <img class="bisnises-img sahid" src="./images/rahid.png" alt="" />
+            </div>
             <p class="bisnises-people-text">
               Join over <span class="green">4,000</span>+ other
             </p>
           </div>
         </div>
-        <img
-          class="bisnises-img"
-          src="./images/group.png"
-          alt=""
-          width="541"
-          height="482"
-        />
+        <picture>
+          <source srcset="./images/group.png" media="(min-width: 1150px)" />
+          <img
+            class="bisnises-g-img"
+            src="./images/mob-mask.png"
+            alt=""
+            width=""
+            height=""
+          />
+        </picture>
       </div>
     </section>
 
@@ -108,7 +119,48 @@
         </p>
         <ul class="stories-list">
           <li class="stories-item">
-            <img src="./images/stories/stories-1.jpg" alt="" />
+            <div class="stories-item-container">
+              <img src="./images/stories/stories-1.jpg" alt="" />
+              <div class="stories-hidden-cont">
+                <div>
+                  <p class="stories-hidden-text">Любишь пиццу с ананасами?</p>
+                  <img
+                    class="stories-hidden-img"
+                    src="./images/pizza.webp"
+                    alt=""
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <form class="stories-hidden-form">
+                  <div class="stories-input-cont">
+                    <label class="stories-hidden-label" for="">
+                      да
+                      <input
+                        class="stories-hidden-input"
+                        type="radio"
+                        name="pizza"
+                        value="yes"
+                        required
+                      />
+                    </label>
+                    <label class="stories-hidden-label" for=""
+                      >нет
+                      <input
+                        class="stories-hidden-input"
+                        type="radio"
+                        name="pizza"
+                        value="no"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <button class="stories-hidden-btn" type="submit">
+                    Признавайся
+                  </button>
+                </form>
+              </div>
+            </div>
             <div class="stories-item-cont">
               <p class="stories-item-text">
                 By <span class="stories-item-span">Wahid Ari</span> | 03 March
@@ -119,8 +171,10 @@
               </h3>
             </div>
           </li>
+
           <li class="stories-item">
             <img src="./images/stories/stories-6.jpg" alt="" />
+
             <div class="stories-item-cont">
               <p class="stories-item-text">
                 By <span class="stories-item-span">Wahid Ari</span> | 03 March
@@ -180,7 +234,6 @@
             </div>
           </li>
         </ul>
-
         <a class="stories-link" href="">
           More Stories
           <svg class="stories-icon" width="20" height="20">
@@ -191,40 +244,68 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts-title">Contact Us</h2>
-      <p class="contacts-text">
-        Need more detailed information? Get in touch with us.
-      </p>
-      <ul class="footer-list-link">
-        <li class="footer-item-link">
-          <a class="footer-logo-link" href="">
-            <svg class="footer-svg-link" width="22" height="22">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-item-link">
-          <a class="footer-logo-link" href="">
-            <svg class="footer-svg-link" width="20" height="22">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-item-link">
-          <a class="footer-logo-link" href="">
-            <svg class="footer-svg-link" width="24" height="20">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <img
-        class="contacts-map-img"
-        src="./images/map.jpg"
-        alt=""
-        width="871"
-        height="323"
-      />
+      <div class="container">
+        <h2 class="contacts-title">Contact Us</h2>
+        <p class="contacts-text">
+          Need more detailed information? Get in touch with us.
+        </p>
+        <ul class="contacts-link-list">
+          <li class="contacts-link-item">
+            <a class="contacts-link-icon" href="">
+              <svg class="contacts-link-svg" width="41" height="41">
+                <use href="./images/icons.svg#icon-twitter-outlined"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts-link-item">
+            <a class="contacts-link-icon" href="">
+              <svg class="contacts-link-svg facebook" width="41" height="41">
+                <use href="./images/icons.svg#icon-facebook-filled"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts-link-item">
+            <a class="contacts-link-icon" href="">
+              <svg class="contacts-link-svg linkedin" width="41" height="41">
+                <use href="./images/icons.svg#icon-linkedin-filled"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list-link">
+          <li class="footer-item-link">
+            <a class="footer-logo-link" href="">
+              <svg class="footer-svg-link" width="22" height="22">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-item-link">
+            <a class="footer-logo-link" href="">
+              <svg class="footer-svg-link" width="20" height="22">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-item-link">
+            <a class="footer-logo-link" href="">
+              <svg class="footer-svg-link" width="24" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <picture>
+          <source srcset="./images/map.jpg" media="(min-width: 1150px)" />
+          <img
+            class="contacts-map-img"
+            src="./images/mob-map.png"
+            alt=""
+            width=""
+            height=""
+          />
+        </picture>
+      </div>
     </section>
 
     <section class="form">
@@ -262,7 +343,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container flexe">
         <div class="footer-cont-link">
           <a class="footer-logo" href=""

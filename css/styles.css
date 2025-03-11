@@ -194,9 +194,9 @@ fieldset {
 }
 .hero-list-btn {
   display: flex;
-  gap: 28px;
+
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .hero-btn-get {
   font-weight: 700;
@@ -509,6 +509,7 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .sup-icons {
   fill: #fff;
@@ -643,6 +644,7 @@ fieldset {
   font-size: 32px;
   max-width: 348px;
   margin: 0 auto;
+  text-align: center;
   margin-bottom: 8px;
 }
 .process-text {
@@ -1061,6 +1063,8 @@ fieldset {
   justify-content: space-between;
   max-width: 371px;
   padding-top: 17px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .promo-subtitle {
   font-weight: 600;
@@ -1069,7 +1073,7 @@ fieldset {
   line-height: 1.514;
   color: #fff;
   text-align: center;
-  width: 335px;
+  max-width: 335px;
   margin: 0 auto 57px auto;
 }
 .promo-btn {
