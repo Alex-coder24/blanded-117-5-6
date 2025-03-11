@@ -196,6 +196,16 @@ summary {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: 14px;
+  position: relative;
+}
+.question-item-summary::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  height: 0px;
+  bottom: -30px;
 }
 .icon-plus,
 .icon-minus {
@@ -211,6 +221,9 @@ summary {
 .question-item-details[open] .icon-minus {
   display: block;
 }
+.question-item-details[open] .question-item-summary::after {
+  visibility: hidden;
+}
 .question-item-title {
   font-weight: 500;
   font-size: 18px;
@@ -218,7 +231,18 @@ summary {
 .question-item-text {
   font-weight: 400;
   font-size: 16px;
+  position: relative;
 }
+.question-item-text::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  height: 0px;
+  bottom: -30px;
+  left: 0;
+}
+
 @media screen and (min-width: 1150px) {
   .question-cont {
     max-width: 920px;
@@ -229,6 +253,10 @@ summary {
   }
   .question-item {
     margin-bottom: 38px;
+  }
+  .question-item-summary::after,
+  .question-item-text::after {
+    bottom: -25px;
   }
 }
 /* #endregion question */
