@@ -4,11 +4,28 @@ input {
 textarea {
   outline: none;
 }
-input,
-label {
-  cursor: pointer;
-}
 
+/* #region header */
+
+/* #endregion header */
+.dark-mode-cont {
+  display: none;
+}
+@media screen and (min-width: 1150px) {
+  .dark-mode-cont {
+    width: 32px;
+    height: 32px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+  }
+  .dark-mode {
+    fill: #02897a;
+  }
+}
 /* #region busnises */
 .bisnises {
   padding-top: 50px;
@@ -90,7 +107,6 @@ label {
 .bisnises-img {
   position: relative;
   transition: z-index 0.3s, transform 0.3s;
-  flex-shrink: 0;
 }
 .rahid {
   z-index: 1;

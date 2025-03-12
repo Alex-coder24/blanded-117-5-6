@@ -61,8 +61,6 @@ fieldset {
 @media screen and (min-width: 1150px) {
   .container {
     max-width: 1150px;
-    padding: 0 20px;
-    box-sizing: border-box;
   }
 }
 /* #region header */
@@ -83,10 +81,10 @@ fieldset {
   gap: 16px;
 }
 .header-logo-text {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  /* line-height: 28px; */
-  line-height: 0.93;
+  line-height: 0.93333;
   color: #173a56;
 }
 .header-list,
@@ -132,6 +130,11 @@ fieldset {
     color: #22343d;
     padding: 26px 0;
     display: block;
+    transition: 200ms ease-in-out;
+  }
+  .header-link:hover,
+  .header-link:focus {
+    font-weight: 600;
   }
 
   .header-list-btn {
@@ -149,6 +152,13 @@ fieldset {
     width: 105px;
     height: 42px;
     background-color: #fff;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  }
+  .header-btn:hover,
+  .header-btn:focus {
+    background-color: #02897a;
+    color: #fff;
+    border: none;
   }
 
   .second {
@@ -157,6 +167,14 @@ fieldset {
     height: 42px;
     background: #02897a;
     color: #fff;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  }
+  .second:hover,
+  .second:focus {
+    background-color: #fff;
+    color: #173a56;
+    border: none;
+    border: 1px solid #bcd0e5;
   }
 }
 /* #endregion header */
@@ -194,7 +212,6 @@ fieldset {
 }
 .hero-list-btn {
   display: flex;
-
   align-items: center;
   justify-content: space-around;
 }
@@ -206,21 +223,38 @@ fieldset {
   width: 142px;
   height: 53px;
   background: #02897a;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+.hero-btn-get:hover,
+.hero-btn-get:focus {
+  background-color: #fff;
+  color: #173a56;
+  border: none;
+  border: 1px solid #bcd0e5;
 }
 .hero-btn-watch {
   font-weight: 600;
   font-size: 16px;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
   color: #02897a;
   border: none;
   background-color: #fff;
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: transform 200ms ease-in-out;
 }
+.hero-btn-watch:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
 .hero-svg {
   fill: #02897a;
+  transition: transform 400ms ease-in-out;
+}
+.hero-btn-watch:hover .hero-svg {
+  transform: rotateY(360deg);
 }
 @media screen and (min-width: 1150px) {
   .hero {
@@ -332,6 +366,14 @@ fieldset {
   display: block;
   margin: 0 auto;
   border: none;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+.product-btn:hover,
+.product-btn:focus {
+  background-color: #fff;
+  color: #173a56;
+  border: none;
+  border: 1px solid #bcd0e5;
 }
 @media screen and (min-width: 1150px) {
   .product {
@@ -695,6 +737,14 @@ fieldset {
   background-color: #02897a;
   margin: 0 auto;
   display: block;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+.process-btn:hover,
+.process-btn:focus {
+  background-color: #fff;
+  color: #173a56;
+  border: none;
+  border: 1px solid #bcd0e5;
 }
 @media screen and (min-width: 1150px) {
   .proce {
@@ -1137,10 +1187,19 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.footer-svg-link {
   stroke: #02897a;
   fill: transparent;
+  transition: stroke 250ms ease-in-out, background-color 300ms ease-in-out,
+    transform 250ms ease-in-out;
+}
+.footer-logo-link:hover,
+.footer-logo-link:focus {
+  stroke: #edfffc;
+  background-color: #02897a;
+  transform: scale(1.1);
+}
+
+.footer-svg-link {
 }
 .footer-logo {
   display: flex;
@@ -1193,14 +1252,20 @@ fieldset {
   position: relative;
   margin-bottom: 25px;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 .footer-icons {
   position: absolute;
   left: 13px;
-  top: 50%;
-  transform: translateY(-50%);
+  /* top: 50%;
+  transform: translateY(-50%); */
   fill: #02897a;
   display: none;
+  transition: transform 250ms ease-in-out;
+}
+.footer-tel:hover + .footer-icons {
+  transform: scale(1.1);
 }
 .footer-tel {
   border: 1px solid #bcd0e5;
@@ -1218,6 +1283,10 @@ fieldset {
   /* line-height: 28px; */
   line-height: 1.75;
   color: transparent;
+  transition: font-size 250ms ease-in-out;
+}
+.footer-tel:hover::placeholder {
+  font-size: 17px;
 }
 .footer-btn {
   font-weight: 700;
@@ -1226,9 +1295,15 @@ fieldset {
   width: 131px;
   height: 39px;
   color: #fff;
-  background: #02897a;
+  background-color: #02897a;
   display: block;
   margin: 0 auto 44px auto;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.footer-btn:hover {
+  background-color: #fff;
+  color: #173a56;
+  border: 1px solid #bcd0e5;
 }
 .footer-text {
   text-align: center;
