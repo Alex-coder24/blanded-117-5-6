@@ -8,11 +8,11 @@ textarea {
 /* #region header */
 
 /* #endregion header */
-.dark-mode-cont {
+.dark-mode-two {
   display: none;
 }
 @media screen and (min-width: 1150px) {
-  .dark-mode-cont {
+  .dark-mode-two {
     width: 32px;
     height: 32px;
     background-color: #f3f3f3;
@@ -22,7 +22,7 @@ textarea {
     align-items: center;
     margin-left: 24px;
   }
-  .dark-mode {
+  .dark-mode-icon {
     fill: #02897a;
   }
 }

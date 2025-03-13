@@ -267,9 +267,12 @@ fieldset {
 }
 .mobile-item {
 }
+.mobile-item .weightm {
+  font-weight: 800;
+}
 .mobile-link {
-  font-weight: 600;
-  font-size: 27px;
+  font-weight: 500;
+  font-size: 25px;
   /* line-height: 28px; */
   line-height: 1.75;
   color: #22343d;
