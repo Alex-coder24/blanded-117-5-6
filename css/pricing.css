@@ -54,6 +54,10 @@ summary {
   margin-bottom: 100px;
   background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
 }
+.dark-body-mode .enterprise {
+  background: none;
+  background-color: #22343d;
+}
 .enterprise-title-span {
   display: block;
   font-weight: 600;
@@ -86,6 +90,12 @@ summary {
   background-color: #02897a;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.enterprise-btn:hover {
+  background-color: #fff;
+  color: #02897a;
+  border: 1px solid #bcd0e5;
 }
 @media screen and (min-width: 1150px) {
   .enterprise-title {
@@ -204,7 +214,7 @@ summary {
   transform: scale(1.1);
 }
 .question-item-summary:hover .icon-minus {
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 .question-item-summary::after {
   content: "";
@@ -213,6 +223,9 @@ summary {
   width: 100%;
   height: 0px;
   bottom: -30px;
+}
+.dark-body-mode .question-item-summary::after {
+  border: 1px solid #474747;
 }
 .icon-plus,
 .icon-minus {
@@ -250,6 +263,9 @@ summary {
   height: 0px;
   bottom: -30px;
   left: 0;
+}
+.dark-body-mode .question-item-text::after {
+  border: 1px solid #474747;
 }
 
 @media screen and (min-width: 1150px) {

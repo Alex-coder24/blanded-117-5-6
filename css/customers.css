@@ -10,11 +10,21 @@
   text-align: center;
   margin-bottom: 38px;
 }
+.dark-body-mode .clients-title {
+  color: #fff;
+}
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-  justify-content: center;
+  row-gap: 60px;
+  justify-content: space-between;
+}
+.clients-item-link {
+  transition: transform 250ms ease-in-out;
+  display: block;
+}
+.clients-item-link:hover {
+  transform: scale(1.1);
 }
 .clients-item {
   width: calc((100%-50px) / 2);
@@ -29,7 +39,8 @@
     font-size: 40px;
   }
   .clients-list {
-    gap: 64px;
+    column-gap: 64px;
+    justify-content: center;
   }
   .clients-item {
     width: calc((100%-192px) / 4);
@@ -43,12 +54,18 @@
   padding-top: 24px;
   padding-bottom: 61px;
 }
+.dark-body-mode .choose {
+  background-color: #22343d;
+}
 .choose-title {
   font-weight: 700;
   font-size: 32px;
   color: #22343d;
   text-align: center;
   margin-bottom: 50px;
+}
+.dark-body-mode .choose-title {
+  color: #fff;
 }
 .choose-list {
   display: flex;
@@ -148,15 +165,6 @@
 }
 .step-btn {
   display: none;
-  border-radius: 8px;
-  width: 224px;
-  height: 44px;
-  background-color: #02897a;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 11px;
-  margin: 0 auto;
 }
 @media screen and (min-width: 1150px) {
   .step-one {
@@ -191,7 +199,24 @@
     margin-bottom: 77px;
   }
   .step-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 224px;
+    height: 44px;
+    background-color: #02897a;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 11px;
+    margin: 0 auto;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  }
+  .step-btn:hover {
+    background-color: #fff;
+    color: #02897a;
+    border: 1px solid #bcd0e5;
   }
 }
 /* #endregion work */
@@ -202,6 +227,10 @@
   padding-top: 30px;
   padding-bottom: 33px;
   background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+}
+.dark-body-mode .join {
+  background: none;
+  background-color: #22343d;
 }
 .join-title {
   font-weight: 700;
@@ -214,6 +243,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 66px;
 }
 .join-list-cont-two {
   text-align: center;

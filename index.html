@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="container header-center">
         <nav class="header-nav">
@@ -43,19 +43,20 @@
             </li>
           </ul>
         </nav>
-        <div class="dark-mode-cont">
-          <svg class="dark-mode" width="24" height="24">
-            <use href="./images/icons.svg#icon-Frame"></use>
-          </svg>
-        </div>
+
         <ul class="header-list-btn">
           <li class="header-item-btn">
             <button class="header-btn" type="button">Sign In</button>
           </li>
           <li class="header-item-btn">
-            <button class="header-btn second" type="button">Sign Up</button>
+            <button class="header-btn-green" type="button">Sign Up</button>
           </li>
         </ul>
+        <button class="dark-mode-btn" type="button">
+          <svg class="dark-mode" width="24" height="24">
+            <use href="./images/icons.svg#icon-Frame"></use>
+          </svg>
+        </button>
         <button class="burger-btn" type="button">
           <svg class="burger-icon top" width="28" height="2">
             <use href="./images/icons.svg#icon-burger-part"></use>
@@ -84,39 +85,41 @@
                 <a class="mobile-link" href="./resources.html">Resources</a>
               </li>
             </ul>
-            <ul class="mobile-list-btn">
-              <li class="mobiler-item-btn">
-                <button class="mobile-btn" type="button">Sign In</button>
-              </li>
-              <li class="mobile-item-btn">
-                <button class="mobile-btn second-mob" type="button">
-                  Sign Up
-                </button>
-              </li>
-            </ul>
-            <ul class="footer-list-link">
-              <li class="footer-item-link">
-                <a class="footer-logo-link" href="">
-                  <svg class="footer-svg-link" width="22" height="22">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-item-link">
-                <a class="footer-logo-link" href="">
-                  <svg class="footer-svg-link" width="20" height="22">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-item-link">
-                <a class="footer-logo-link" href="">
-                  <svg class="footer-svg-link" width="24" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <div class="mob-list-cont">
+              <ul class="mobile-list-btn">
+                <li class="mobiler-item-btn">
+                  <button class="mobile-btn" type="button">Sign In</button>
+                </li>
+                <li class="mobile-item-btn">
+                  <button class="mobile-btn second-mob" type="button">
+                    Sign Up
+                  </button>
+                </li>
+              </ul>
+              <ul class="footer-list-link">
+                <li class="footer-item-link">
+                  <a class="footer-logo-link" href="">
+                    <svg class="footer-svg-link" width="22" height="22">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item-link">
+                  <a class="footer-logo-link" href="">
+                    <svg class="footer-svg-link" width="20" height="22">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item-link">
+                  <a class="footer-logo-link" href="">
+                    <svg class="footer-svg-link" width="24" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -370,14 +373,14 @@
                   width="98"
                   height="98"
                 />
-                <div class="bubble bubble-pa">
+                <div class="bubble">
                   <p class="process-item-text">I can take care of your pitch</p>
                 </div>
               </div>
             </li>
             <li class="process-item">
               <div class="pro-flex">
-                <div class="bubble bubble-pad">
+                <div class="bubble">
                   <p class="process-item-text">I can design you website</p>
                 </div>
                 <img
@@ -403,7 +406,7 @@
             </li>
             <li class="process-item">
               <div class="pro-flex">
-                <div class="bubble bubble-pad">
+                <div class="bubble">
                   <p class="process-item-text">I can prototype your app</p>
                 </div>
                 <img

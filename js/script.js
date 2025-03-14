@@ -2,23 +2,32 @@ console.log("js add!");
 document.addEventListener("DOMContentLoaded", function () {
   const burgerBtn = document.querySelector(".burger-btn");
   const mobileMenu = document.querySelector(".mob-menu");
-  const darkModeCont = document.querySelector(".dark-mode-cont");
+  const darkModeBtn = document.querySelector(".dark-mode-btn");
+  const body = document.querySelector(".body");
 
+  // Проверяем сохранённую тему в localStorage
+  if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("dark-body-mode");
+    darkModeBtn.classList.add("btn-active");
+  }
+
+  // Функционал бургер-меню
   burgerBtn.addEventListener("click", function () {
     mobileMenu.classList.toggle("is-open");
-
     burgerBtn.classList.toggle("active");
-    darkModeCont.classList.toggle("visible");
+    darkModeBtn.classList.toggle("visible");
   });
 
-  document.addEventListener("click", function (event) {
-    const isClickInside =
-      burgerBtn.contains(event.target) || mobileMenu.contains(event.target);
+  // Функционал переключения темной темы
+  darkModeBtn.addEventListener("click", function () {
+    body.classList.toggle("dark-body-mode");
+    darkModeBtn.classList.toggle("btn-active");
 
-    if (!isClickInside) {
-      mobileMenu.classList.remove("is-open");
-      burgerBtn.classList.remove("active");
-      darkModeCont.classList.remove("visible");
+    // Сохраняем тему в localStorage
+    if (body.classList.contains("dark-body-mode")) {
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      localStorage.setItem("darkMode", "disabled");
     }
   });
 });
