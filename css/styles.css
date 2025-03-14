@@ -201,7 +201,7 @@ fieldset {
     color: #22343d;
     padding: 26px 0;
     display: block;
-    transition: 200ms ease-in-out;
+    transition: 50ms ease-in-out;
   }
   .dark-body-mode .header-link {
     color: #fff;
