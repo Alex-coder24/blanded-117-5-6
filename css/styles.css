@@ -69,7 +69,7 @@ fieldset {
   margin: 0 auto;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1150px) {
   .container {
     max-width: 1150px;
   }
@@ -79,7 +79,7 @@ fieldset {
   box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 1000;
 }
 .dark-body-mode .header {
@@ -257,6 +257,10 @@ fieldset {
     color: #fff;
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
   }
+  .dark-body-mode .header-btn-green:hover {
+    background-color: transparent;
+    color: #fff;
+  }
   .header-btn-green:hover,
   .header-btn-green:focus {
     background-color: #fff;
@@ -371,7 +375,18 @@ fieldset {
   color: #fff;
   border: none;
 }
-.second-mob {
+.dark-body-mode .mobile-btn {
+  background-color: transparent;
+  color: #fff;
+}
+.dark-body-mode .mobile-btn:hover {
+  background-color: #02897a;
+  color: #fff;
+  border: none;
+}
+.mobile-btn-second {
+  font-weight: 600;
+  font-size: 16px;
   border-radius: 4px;
   width: 113px;
   height: 42px;
@@ -380,12 +395,15 @@ fieldset {
   color: #fff;
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
-.second-mob:hover,
-.second-mob:focus {
+.mobile-btn-second:hover,
+.mobile-btn-second:focus {
   background-color: #fff;
   color: #173a56;
-
   border: 1px solid #bcd0e5;
+}
+.dark-body-mode .mobile-btn-second:hover {
+  background-color: transparent;
+  color: #fff;
 }
 
 .mobile-list-link {
@@ -476,6 +494,10 @@ fieldset {
   border: none;
   border: 1px solid #bcd0e5;
 }
+.dark-body-mode .hero-btn-get:hover {
+  background-color: transparent;
+  color: #fff;
+}
 .hero-btn-watch {
   font-weight: 600;
   font-size: 16px;
@@ -486,10 +508,13 @@ fieldset {
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, color 200ms ease-in-out;
 }
 .dark-body-mode .hero-btn-watch {
   background-color: transparent;
+}
+.dark-body-mode .hero-btn-watch:hover {
+  color: #fff;
 }
 .hero-btn-watch:hover {
   text-decoration: none;
@@ -498,10 +523,13 @@ fieldset {
 
 .hero-svg {
   fill: #02897a;
-  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, fill 200ms ease-in-out;
 }
 .hero-btn-watch:hover .hero-svg {
   transform: rotateY(360deg);
+}
+.dark-body-mode .hero-btn-watch:hover .hero-svg {
+  fill: #fff;
 }
 @media screen and (min-width: 1150px) {
   .hero {
@@ -623,6 +651,10 @@ fieldset {
   color: #173a56;
   border: none;
   border: 1px solid #bcd0e5;
+}
+.dark-body-mode .product-btn:hover {
+  background-color: transparent;
+  color: #fff;
 }
 @media screen and (min-width: 1150px) {
   .product {
@@ -999,6 +1031,10 @@ fieldset {
   color: #173a56;
   border: none;
   border: 1px solid #bcd0e5;
+}
+.dark-body-mode .process-btn:hover {
+  background-color: transparent;
+  color: #fff;
 }
 @media screen and (min-width: 1150px) {
   .proce {
@@ -1557,7 +1593,7 @@ fieldset {
 
 .footer-icons {
   position: absolute;
-  left: 35px;
+  left: 25px;
   /* top: 50%;
   transform: translateY(-50%); */
   fill: #02897a;
@@ -1625,6 +1661,10 @@ fieldset {
   background-color: #fff;
   color: #173a56;
   border: 1px solid #bcd0e5;
+}
+.dark-body-mode .footer-btn:hover {
+  background-color: transparent;
+  color: #fff;
 }
 .footer-text {
   text-align: center;

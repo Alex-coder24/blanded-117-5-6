@@ -218,6 +218,10 @@
     color: #02897a;
     border: 1px solid #bcd0e5;
   }
+  .dark-body-mode .step-btn:hover {
+    background-color: transparent;
+    color: #fff;
+  }
 }
 /* #endregion work */
 

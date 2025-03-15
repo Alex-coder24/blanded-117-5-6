@@ -104,7 +104,8 @@ textarea {
   border: 1px solid #eaeaea;
 }
 .dark-body-mode .bisnises-form-btn:hover {
-  border: none;
+  background-color: transparent;
+  color: #fff;
 }
 .bisnises-people-cont {
   align-items: center;
@@ -521,7 +522,8 @@ textarea {
   border: 1px solid #ddd;
 }
 .dark-body-mode .form-btn:hover {
-  border: none;
+  background-color: transparent;
+  color: #fff;
 }
 @media screen and (min-width: 1150px) {
   .form-cont {

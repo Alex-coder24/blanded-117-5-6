@@ -97,6 +97,10 @@ summary {
   color: #02897a;
   border: 1px solid #bcd0e5;
 }
+.dark-body-mode .enterprise-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
 @media screen and (min-width: 1150px) {
   .enterprise-title {
     font-size: 34px;
@@ -231,7 +235,6 @@ summary {
 .icon-minus {
   fill: #02897a;
   flex-shrink: 0;
-  transition: transform 250ms ease-in-out;
 }
 .icon-minus {
   display: none;
@@ -242,6 +245,7 @@ summary {
 }
 .question-item-details[open] .icon-minus {
   display: block;
+  fill: #fff;
 }
 .question-item-details[open] .question-item-summary::after {
   visibility: hidden;
