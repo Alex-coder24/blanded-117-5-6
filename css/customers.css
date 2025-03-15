@@ -275,6 +275,9 @@
   color: #000;
   margin-top: 12px;
 }
+.dark-body-mode .join-item-text-bold {
+  color: #fff;
+}
 @media screen and (min-width: 1150px) {
   .join {
     margin-bottom: 150px;
