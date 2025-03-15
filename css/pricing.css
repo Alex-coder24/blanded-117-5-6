@@ -235,6 +235,7 @@ summary {
 .icon-minus {
   fill: #02897a;
   flex-shrink: 0;
+  transition: transform 250ms ease-in-out;
 }
 .icon-minus {
   display: none;
