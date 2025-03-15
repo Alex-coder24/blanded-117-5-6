@@ -579,6 +579,7 @@ fieldset {
   margin-bottom: 100px;
 }
 .dark-body-mode .product {
+  /* background: linear-gradient(180deg, #22343d 0%, rgba(67, 67, 67, 0) 100%); */
 }
 .product-subtitle {
   font-weight: 700;
